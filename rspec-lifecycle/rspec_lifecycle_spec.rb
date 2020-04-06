@@ -18,6 +18,10 @@ RSpec.describe "The Rspec Lifecycle" do
       puts "HOOK: before context running..."
     end
 
+    before do
+      puts "HOOK: before without a argument is the same as before(:each)"
+    end
+
     before(:each) do
       puts "HOOK: before each running..."
     end
@@ -32,6 +36,10 @@ RSpec.describe "The Rspec Lifecycle" do
 
     it "another test" do
       expect(true).to eq(true)
+    end
+
+    after do
+      puts "HOOK: after without a argument is the same as after(:each)"
     end
 
     after(:each) do
