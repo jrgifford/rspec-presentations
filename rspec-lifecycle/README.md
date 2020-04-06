@@ -9,7 +9,7 @@ overview of the RSpec Lifecycle.
 
 ```
 bundle install
-``
+```
 
 2. To run the tests and explore, use this command:
 
